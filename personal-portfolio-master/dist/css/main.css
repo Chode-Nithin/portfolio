@@ -1018,15 +1018,16 @@ header .seperator-skew svg .fill-white {
   }
 }/*# sourceMappingURL=main.css.map */
 
+/* Base styles */
 .certificate-container {
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align items at the start of the container */
-  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
-  max-width: 1000px; /* Set a maximum width for the container */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 20px; /* Add some spacing around the container */
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .card {
@@ -1061,4 +1062,18 @@ header .seperator-skew svg .fill-white {
   padding: 15px;
   text-align: center;
   font-size: 18px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 40px);
+  }
+}
+
+/* Adjustments for even smaller screens */
+@media (max-width: 480px) {
+  .card {
+    width: calc(100% - 40px);
+  }
 }
